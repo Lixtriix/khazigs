@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peace</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Nunito+Sans:wght@600&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #fundo{
+            width: 100%;
+            height: 50px;
+            background: url(https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+        #fundo p{
+            text-align: center;
+            color: black;
+            padding: 9px;
+            font-size: 25px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        #fundo2{
+            background-color: rgb(42, 42, 42);
+            height: 1920px;
+            width: 100%;
+            padding-top: 20px;
+        }
+        #fundo2 a{
+            font-size: 35px;
+            margin: 5px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: white;
+            border-radius: 10px 10px 10px 10px;
+        }
+        a:link, a:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 3px 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        a:hover, a:active {
+            background-color: red;
+            animation: abriu 0.5s infinite ease-in-out;
+            position: relative;
+        }
+        @keyframes abriu {
+            0%   {bottom: -2px;}
+            50%  {bottom: 2px;}
+            100%{bottom: -2px;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fundo">
+        <p>
+            Site (estranho) da Peace
+        </p>
+        </div>
+    <div id="fundo2">
+        <a href="https://www.youtube.com/c/johnsanves" target="_blank">
+            Canal john sanves
+        </a>
+        <br>
+        <a href="https://www.youtube.com/c/Bichelengo" target="_blank">
+            Canal da BonnieBrokeHearts
+        </a>
+        <br>
+        <a href="https://www.youtube.com/L30NN" target="_blank">
+            L30NN
+        </a>
+        <br>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            Peace
+        </a>
+        <br>
+        <a onclick="audio.play();"href="https://www.youtube.com/c/JoabManoelCanetaAzul" target="_blank">
+            caneta azul
+        </a>
+    </div>
+<script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "D:/Musikas/audios fodas/PU.wav";
+</script>
+</body>
+</html>
